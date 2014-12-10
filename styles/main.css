@@ -4953,6 +4953,12 @@ button.close {
 
 /* DEFINE VARIABLES & MIXINS */
 /*  GLOBAL STYLES  */
+html, body, .container {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
 /*  PAGE SPECIFICS: HOME & NAVIGATION  */
 #mobile-nav {
   text-transform: uppercase;
@@ -4967,3 +4973,18 @@ button.close {
         color: #00A65C; }
   #mobile-nav .open a {
     background-color: #303038; }
+
+header.container {
+  background: url("../imgs/landing.jpg") center center no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+  header.container svg {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 882px;
+    fill: white; }
