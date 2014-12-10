@@ -30,6 +30,10 @@ Made with love by MalloryPorche | http://www.msmalloryporche.com
 
 /* CSS-RESET, BOOTSTRAP STYLING */
 @import "_reset";
+
+/*  DEFINE VARIABLES */
+@import "_variables";
+
 $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/fonts/bootstrap/";
 
 // bower:scss
@@ -37,8 +41,6 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 // endbower
 
 /* DEFINE VARIABLES & MIXINS */
-
-@import "_variables";
 
 @import "_mixins";
 
@@ -48,4 +50,4 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/vendor/assets/font
 
 /*  PAGE SPECIFICS: HOME & NAVIGATION  */
 
-@import "pages/_home";
+@import "pages/_home.scss";

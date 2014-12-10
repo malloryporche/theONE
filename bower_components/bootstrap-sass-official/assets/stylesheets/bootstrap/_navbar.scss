@@ -529,8 +529,8 @@
 // Inverse navbar
 
 .navbar-inverse {
-  background-color: $navbar-inverse-bg;
-  border-color: $navbar-inverse-border;
+  background-color: $primary_color;
+  border-color: $primary_color;
 
   .navbar-brand {
     color: $navbar-inverse-brand-color;
@@ -551,7 +551,7 @@
 
       &:hover,
       &:focus {
-        color: $navbar-inverse-link-hover-color;
+        color: $accent_green;
         background-color: $navbar-inverse-link-hover-bg;
       }
     }
@@ -560,7 +560,7 @@
       &:hover,
       &:focus {
         color: $navbar-inverse-link-active-color;
-        background-color: $navbar-inverse-link-active-bg;
+        background-color: $primary_color;
       }
     }
     > .disabled > a {

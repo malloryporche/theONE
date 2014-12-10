@@ -1,0 +1,20 @@
+//	HOME & NAVIGATION	//
+#mobile-nav {
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	line-height: 150%;
+	li {
+		padding: 10px 5px;
+		a {
+			font-weight: 200;
+			color: $white_text;
+			&:hover {
+			color: $accent_green;
+		}
+		}
+
+	}
+	.open a {
+		background-color: $primary_color_highlight;
+	}
+}

@@ -59,6 +59,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/*  DEFINE VARIABLES */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -3401,8 +3402,8 @@ tbody.collapse.in {
       color: #ccc; }
 
 .navbar-inverse {
-  background-color: #222;
-  border-color: #090909; }
+  background-color: #313139;
+  border-color: #313139; }
   .navbar-inverse .navbar-brand {
     color: #9d9d9d; }
     .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
@@ -3413,11 +3414,11 @@ tbody.collapse.in {
   .navbar-inverse .navbar-nav > li > a {
     color: #9d9d9d; }
     .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-      color: #fff;
+      color: #00A65C;
       background-color: transparent; }
   .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
     color: #fff;
-    background-color: #090909; }
+    background-color: #313139; }
   .navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse .navbar-nav > .disabled > a:focus {
     color: #444;
     background-color: transparent; }
@@ -4953,3 +4954,16 @@ button.close {
 /* DEFINE VARIABLES & MIXINS */
 /*  GLOBAL STYLES  */
 /*  PAGE SPECIFICS: HOME & NAVIGATION  */
+#mobile-nav {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  line-height: 150%; }
+  #mobile-nav li {
+    padding: 10px 5px; }
+    #mobile-nav li a {
+      font-weight: 200;
+      color: #fff; }
+      #mobile-nav li a:hover {
+        color: #00A65C; }
+  #mobile-nav .open a {
+    background-color: #303038; }
