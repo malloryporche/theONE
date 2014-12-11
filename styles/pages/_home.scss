@@ -30,7 +30,7 @@ header.container {
 		width: 100%;
 		position: absolute;
 		left: 0;
-		top: 882px;
+		bottom: 0;
 		fill: white;
 	}
 }
@@ -38,17 +38,22 @@ header.container {
 #welcome {
 	font-weight: light;
 	text-align: center;
-	line-height: 150%;
-	padding: 10px;
-	margin: 50px 10px;
+	line-height: 180%;
+	padding: 15px;
+	margin: 50px 10px 10px;
 }
 #welcome_header {
-		line-height: 175%;
-		margin-bottom: 30px;
+		line-height: 150%;
+		margin-bottom: 40px;
 		font-weight: light;
 	}
 #welcome p {
-	margin: 10px;
+	color: #999;
+	margin: 50px 0px 30px;;
+	@include rem(18);
+}
+#welcome_accent {
+	color: $accent_green;
 }
 #welcome_link {
 	clear: both;
@@ -56,45 +61,127 @@ header.container {
 	margin: 20px 0;
 	i.fa {
 		display: none;
-		-webkit-transform: scale(-.5);
-		@include transition(-webkit-transform, 2s, ease-in-out, 1s);;
+		color: white;
+		-webkit-transform: scale(.5, .5);
+		-moz-transform: scale(.5,.5);
+		-o-transform: scale(.5,.5);
+		transform: scale(.5,.5);
 	}
 	a {
-		color: black;
+		@include rem(19);
+		letter-spacing: 0.15em;
 		display: block;
-		padding: 15px 0;
-		margin: 10px auto;
+		padding: 10px 0;
+		margin: 20px auto;
 		border: 1px solid black;
 		max-width: 210px;
 		&:hover {
-			text-decoration: none;
 			@include transition(all, 1.5s, ease, 0);;
 			color: white;
-			i.fa {
-				@include transition(-webkit-transform, 2s, ease-in-out, 1s);;
-				-webkit-transform: scale(1.5);
-				display: inline-block;
-				color: white;
-				margin: 0 5px;
-			}
+		}
+		span {
+			@include transition(-webkit-transform, 2s, ease, 0);;
 		}
 	}
 }
+#welcome a:hover i.fa {
+	display: inline-block;
+	-webkit-transform: scale(2,2);
+	-moz-transform: scale(2,2);
+	-o-transform: scale(2,2);
+	transform: scale(2, 2);
+	@include transition(-webkit-transform, 1.5s, ease-in-out, 0);;
+	}
 #welcome_link_purchase a {
 	&:hover {
 		background-color: $primary_color;
 		border-color: $primary_color;
+		#welcome_link_purchase_text {
+			-webkit-transform: transalteX(55px);
+			@include transition(-webkit-transform, 2s, ease, 0);
 		}
 	}
+}
 #welcome_link_twitter a {
 	&:hover {
 		background-color: $secondary_color;
 		border-color: $secondary_color;
+		span {
+			-webkit-transform: translateX(-15px);
+			@include transition(-webkit-transform, 2s, ease, 0);
+		}
 	}
 }
 @media screen and (min-width: 500px) {
 	#welcome_link a {
 		min-width: 150px;
-		display: inline-block;
+	}
+}
+
+//  HOME PAGE PORTFOLIO SECTION  //
+
+#portfolio {
+
+}
+
+#portfolio_flexbox_container {
+	display: -webkit-flex;
+	-webkit-flex-direction: row;
+	-webkit-flex-wrap: wrap;
+	align-items: flex-start;
+}
+
+#portfolio_flexbox_container .wrap {
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	img {
+		-webkit-flex-grow: 1;
+		display: block;
+		padding: 0;
+		margin: 0;
+		-webkit-transform: scale(1);
+		@include transition(-webkit-transform, .5s, ease-in, 0);;
+	}
+	h2, p {
+		position: absolute;
+		width: 100%;
+		left: 0;
+		opacity: 0;
+	}
+	h2 {
+		z-index: 60;
+		height: 100%;
+		top: 0;	
+		letter-spacing: 0.15em;
+		-webkit-transform: scale(1);
+		@include transition(opacity, 1.5s, linear, 2s);;
+		@include transition(background-color, .5s, ease-in, 0);;
+	}
+	p {
+		top: 45%;
+		left: 0;
+		-webkit-transform: scale(.5);
+		@include transition(color, 1.5s, ease-in, 3s);;
+		@include transition(opacity, 4.5s, linear, 3s);;
+		@include transition(-webkit-transform, .5s, ease-in, 0);;
+	}
+	&:hover {
+		img {
+			-webkit-transform: scale(1.2);
+			@include transition(-webkit-transform, .25s, ease-in, 0);
+		}
+		h2 {
+			opacity: 1;
+			background-color: $primary_background;
+			-webkit-transform: scale(1.3);
+		}
+		p {
+			opacity: 1;
+			color: white;
+			-webkit-transform: scale(1.1);
+			@include rem(19);
+		}
 	}
 }

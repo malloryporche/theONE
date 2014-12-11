@@ -27,4 +27,28 @@
 	transition-delay: $transition_delay;
 }
 
-//	CSS3 TRANFORMS  //
+//	ANIMATE TRANSFORM  //
+@mixin transform($transition_duration, $transition_timing_function, $transition_delay) {
+	-webkit-transition-duration: $transition_duration;
+	-moz-transition-duration: $transition_duration;
+	-ms-transition-duration: $transition_duration;
+	-o-transition-duration: $transition_duration;
+	transition-duration: $transition_duration;
+
+	-webkit-transition-timing-function: $transition_timing_function;
+	-moz-transition-timing-function: $transition_timing_function;
+	-ms-transition-timing-function: $transition_timing_function;
+	-o-transition-timing-function: $transition_timing_function;
+	transition-timing-function: $transition_timing_function;
+
+	-webkit-transition-delay: $transition_delay;
+	-moz-transition-delay: $transition_delay;
+	-ms-transition-delay: $transition_delay;
+	-o-transition-delay: $transition_delay;
+	transition-delay: $transition_delay;
+}
+
+//  FONT-TYPE Conversions  //
+@mixin rem($target_size) {
+	font-size: ($target_size / $base_html)+ rem;
+}
