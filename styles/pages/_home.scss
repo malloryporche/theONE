@@ -241,6 +241,12 @@ p.portfolio_widget_title_animation {
 	@include rem(48);
 	background: #28282e;
 	text-align: center;
+	-webkit-transform: scale(1);
+	@include transition(-webkit-transform, 1s, ease-out, 0);;
+	&:hover {
+		@include transition(-webkit-transform, 1s, ease-out, 0);;
+		-webkit-transform: scale(.5);;
+	}
 }
 .service_widget_icon i {
 	color: white;
