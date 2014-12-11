@@ -52,3 +52,15 @@
 @mixin rem($target_size) {
 	font-size: ($target_size / $base_html)+ rem;
 }
+
+//	VERTICALLY, HORIZONTALLY CENTERED CONTENT //
+@mixin centered {	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}

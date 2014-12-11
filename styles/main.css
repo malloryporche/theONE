@@ -4983,7 +4983,7 @@ a {
     text-decoration: none; }
 
 .section_heading {
-  margin: 0 0 20px;
+  margin: 60px 0 20px;
   text-align: center; }
   .section_heading > h1 {
     font-size: 1.75rem;
@@ -5010,6 +5010,7 @@ a {
     background-color: black; }
 
 header.container {
+  position: relative;
   background: url("../imgs/landing.jpg") center center no-repeat;
   background-attachment: fixed;
   -webkit-background-size: cover;
@@ -5023,6 +5024,18 @@ header.container {
     left: 0;
     bottom: 0;
     fill: white; }
+  header.container #header_quote_animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
+    text-transform: uppercase;
+    text-align: center; }
 
 #welcome {
   font-weight: light;
@@ -5086,6 +5099,7 @@ header.container {
       transition-delay: 0;
       color: white; }
     #welcome_link a span {
+      margin-right: 20px;
       -webkit-transition-property: -webkit-transform;
       -moz-transition-property: -webkit-transform;
       -ms-transition-property: -webkit-transform;
@@ -5164,7 +5178,7 @@ header.container {
   background-color: #FA6746;
   border-color: #FA6746; }
   #welcome_link_twitter a:hover span {
-    -webkit-transform: translateX(-15px);
+    -webkit-transform: translateX(-5px);
     -webkit-transition-property: -webkit-transform;
     -moz-transition-property: -webkit-transform;
     -ms-transition-property: -webkit-transform;
@@ -5394,6 +5408,7 @@ header.container {
 
 .service_widget_container {
   position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -5429,6 +5444,7 @@ header.container {
 
 .service_widget_icon i {
   position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -5436,3 +5452,13 @@ header.container {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
+
+.blog_thumb {
+  width: 50%;
+  height: 100%; }
+
+.blog_thumb img {
+  min-height: 115px;
+  max-height: 100%;
+  width: auto;
+  display: block; }

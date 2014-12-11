@@ -17,8 +17,11 @@
 		background-color: $primary_color_highlight;
 	}
 }
-
+.container > .navbar-header {
+	margin-left: 0;
+}
 header.container {
+	position: relative;
 	background: url("../imgs/landing.jpg") center center no-repeat;
 	background-attachment: fixed;
 	-webkit-background-size: cover;
@@ -32,6 +35,12 @@ header.container {
 		left: 0;
 		bottom: 0;
 		fill: white;
+	}
+	#header_quote_animation {
+		@include centered;;
+		color: white;
+		text-transform: uppercase;
+		text-align: center;
 	}
 }
 
@@ -80,6 +89,7 @@ header.container {
 			color: white;
 		}
 		span {
+			margin-right: 20px;
 			@include transition(-webkit-transform, 2s, ease, 0);;
 		}
 	}
@@ -107,7 +117,7 @@ header.container {
 		background-color: $secondary_color;
 		border-color: $secondary_color;
 		span {
-			-webkit-transform: translateX(-15px);
+			-webkit-transform: translateX(-5px);
 			@include transition(-webkit-transform, 2s, ease, 0);
 		}
 	}
@@ -146,7 +156,7 @@ header.container {
 	}
 	&:hover {
 		img {
-			-webkit-transform: scale(1.2);
+			-webkit-transform: scale(1.3);
 			@include transition(-webkit-transform, .25s, ease-in, 0);
 		}
 	}
@@ -160,7 +170,7 @@ header.container {
 .portfolio_widget_title {
 		z-index: 60;
 		height: 100%;
-		top: 0;	
+		top: -20px;	
 		letter-spacing: 0.15em;
 		-webkit-transform: scale(1);
 		@include transition(opacity, 1.5s, linear, 2s);;
@@ -205,13 +215,7 @@ header.container {
 
 .service_widget_container {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	-o-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
+	@include centered;;
 }
 #service_first_widget {
 	background: #666;
@@ -239,12 +243,17 @@ header.container {
 	text-align: center;
 }
 .service_widget_icon i {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-moz-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	-o-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
+	color: white;
+	@include centered;;
+}
+
+.blog_thumb {
+	width: 50%;
+	height: 100%;
+}
+.blog_thumb img {
+	min-height: 115px;
+	max-height: 100%;
+	width: auto;
+	display: block;
 }
