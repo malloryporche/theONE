@@ -15,9 +15,11 @@
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
-    <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,400,300,500' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="styles/font-awesome.min.css">
+    
+    
     <link rel="stylesheet" href="styles/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,400,300,500' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- endbuild -->
     
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -60,18 +62,35 @@
     
     <!--Full Page Header w/ Parallax Slider -->
     <header class="container">
-        <div class="header_parallax_slider" id="header_parallax_slider">
-            <!-- Clipping Mask for Slider -->
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="none" viewBox="0 0 100 100" style="height: 143px;">
-                <polygon points="0,0 50,98 100,0 100,100 0,100"></polygon>
-          </svg>
-
-        </div>
+        <!-- Clipping Mask for Slider -->
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" preserveAspectRatio="none" viewBox="0 0 100 100" style="height: 143px;">
+            <polygon points="0,0 50,98 100,0 100,100 0,100"></polygon>
+        </svg>
     </header>
-    <div class="container">
-       
-    </div>
+
+    <main class="container">
+
+    <!-- Welcome -->
+    <section class="row" id="welcome">
+        <h1 id="welcome_header">Hi, welcome to TheOne</h1>
+        <p>Adipiscing aliquam a odio phasellus auctor penatibus, ac facilisis! Hac est tortor vel mid! Montes vel pellentesque ut. Elit! <strong>Quis aliquet</strong> integer, lundium eros et eu magna cursus? Dis parturient tortor placerat! Sed. Placerat <span id="welcome_accent">sed pid</span>. Duis.</p>
+        <div id="welcome_link">
+            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" id="welcome_link_purchase">
+                <a href="#">
+                    <span>
+                        <i class="fa fa-external-link" id="external_link"></i></span> Buy theONE</a>
+            </div>
+            <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" id="welcome_link_twitter">
+                <a href="#twitter">
+                    Our Twitter <span><i class="fa fa-twitter-square"></i></span>
+                </a>        
+            </div>
+        </div>
+    </section>
+          
     
+    </main>
+      
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->

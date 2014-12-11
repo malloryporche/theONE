@@ -4959,6 +4959,10 @@ html, body, .container {
   margin: 0;
   padding: 0; }
 
+html {
+  font-family: "Raleway";
+  font-size: 18px; }
+
 /*  PAGE SPECIFICS: HOME & NAVIGATION  */
 #mobile-nav {
   text-transform: uppercase;
@@ -4988,3 +4992,81 @@ header.container {
     left: 0;
     top: 882px;
     fill: white; }
+
+#welcome {
+  font-weight: light;
+  text-align: center;
+  line-height: 150%;
+  padding: 10px;
+  margin: 50px 10px; }
+
+#welcome_header {
+  line-height: 175%;
+  margin-bottom: 30px;
+  font-weight: light; }
+
+#welcome p {
+  margin: 10px; }
+
+#welcome_link {
+  clear: both;
+  text-transform: uppercase;
+  margin: 20px 0; }
+  #welcome_link i.fa {
+    display: none;
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -ms-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 1.5s;
+    -moz-transition-duration: 1.5s;
+    -ms-transition-duration: 1.5s;
+    -o-transition-duration: 1.5s;
+    transition-duration: 1.5s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease; }
+  #welcome_link a {
+    color: black;
+    display: block;
+    padding: 15px 0;
+    margin: 10px auto;
+    border: 1px solid black;
+    max-width: 210px; }
+    #welcome_link a:hover {
+      text-decoration: none;
+      -webkit-transition-property: all;
+      -moz-transition-property: all;
+      -ms-transition-property: all;
+      -o-transition-property: all;
+      transition-property: all;
+      -webkit-transition-duration: 1.5s;
+      -moz-transition-duration: 1.5s;
+      -ms-transition-duration: 1.5s;
+      -o-transition-duration: 1.5s;
+      transition-duration: 1.5s;
+      -webkit-transition-timing-function: ease;
+      -moz-transition-timing-function: ease;
+      -ms-transition-timing-function: ease;
+      -o-transition-timing-function: ease;
+      transition-timing-function: ease;
+      color: white; }
+      #welcome_link a:hover i.fa {
+        display: inline-block;
+        color: white; }
+
+#welcome_link_purchase a:hover {
+  background-color: #313139;
+  border-color: #313139; }
+
+#welcome_link_twitter a:hover {
+  background-color: #FA6746;
+  border-color: #FA6746; }
+
+@media screen and (min-width: 500px) {
+  #welcome_link a {
+    min-width: 150px; }
+ }

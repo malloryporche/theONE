@@ -12,7 +12,6 @@
 			color: $accent_green;
 		}
 		}
-
 	}
 	.open a {
 		background-color: $primary_color_highlight;
@@ -33,5 +32,64 @@ header.container {
 		left: 0;
 		top: 882px;
 		fill: white;
+	}
+}
+
+#welcome {
+	font-weight: light;
+	text-align: center;
+	line-height: 150%;
+	padding: 10px;
+	margin: 50px 10px;
+}
+#welcome_header {
+		line-height: 175%;
+		margin-bottom: 30px;
+		font-weight: light;
+	}
+#welcome p {
+	margin: 10px;
+}
+#welcome_link {
+	clear: both;
+	text-transform: uppercase;
+	margin: 20px 0;
+	i.fa {
+		display: none;
+		@include transition(all, 1.5s, ease);;
+	}
+	a {
+		color: black;
+		display: block;
+		padding: 15px 0;
+		margin: 10px auto;
+		border: 1px solid black;
+		max-width: 210px;
+		&:hover {
+			text-decoration: none;
+			@include transition(all, 1.5s, ease);;
+			color: white;
+			i.fa {
+				display: inline-block;
+				color: white;
+			}
+		}
+	}
+}
+#welcome_link_purchase a {
+	&:hover {
+		background-color: $primary_color;
+		border-color: $primary_color;
+		}
+	}
+#welcome_link_twitter a {
+	&:hover {
+		background-color: $secondary_color;
+		border-color: $secondary_color;
+	}
+}
+@media screen and (min-width: 500px) {
+	#welcome_link a {
+		min-width: 150px;
 	}
 }
