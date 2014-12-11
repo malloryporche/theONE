@@ -5014,21 +5014,27 @@ header.container {
   margin: 20px 0; }
   #welcome_link i.fa {
     display: none;
-    -webkit-transition-property: all;
-    -moz-transition-property: all;
-    -ms-transition-property: all;
-    -o-transition-property: all;
-    transition-property: all;
-    -webkit-transition-duration: 1.5s;
-    -moz-transition-duration: 1.5s;
-    -ms-transition-duration: 1.5s;
-    -o-transition-duration: 1.5s;
-    transition-duration: 1.5s;
-    -webkit-transition-timing-function: ease;
-    -moz-transition-timing-function: ease;
-    -ms-transition-timing-function: ease;
-    -o-transition-timing-function: ease;
-    transition-timing-function: ease; }
+    -webkit-transform: scale(-0.5);
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -webkit-transform;
+    -ms-transition-property: -webkit-transform;
+    -o-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -ms-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    -webkit-transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -ms-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    transition-delay: 1s; }
   #welcome_link a {
     color: black;
     display: block;
@@ -5053,10 +5059,37 @@ header.container {
       -ms-transition-timing-function: ease;
       -o-transition-timing-function: ease;
       transition-timing-function: ease;
+      -webkit-transition-delay: 0;
+      -moz-transition-delay: 0;
+      -ms-transition-delay: 0;
+      -o-transition-delay: 0;
+      transition-delay: 0;
       color: white; }
       #welcome_link a:hover i.fa {
+        -webkit-transition-property: -webkit-transform;
+        -moz-transition-property: -webkit-transform;
+        -ms-transition-property: -webkit-transform;
+        -o-transition-property: -webkit-transform;
+        transition-property: -webkit-transform;
+        -webkit-transition-duration: 2s;
+        -moz-transition-duration: 2s;
+        -ms-transition-duration: 2s;
+        -o-transition-duration: 2s;
+        transition-duration: 2s;
+        -webkit-transition-timing-function: ease-in-out;
+        -moz-transition-timing-function: ease-in-out;
+        -ms-transition-timing-function: ease-in-out;
+        -o-transition-timing-function: ease-in-out;
+        transition-timing-function: ease-in-out;
+        -webkit-transition-delay: 1s;
+        -moz-transition-delay: 1s;
+        -ms-transition-delay: 1s;
+        -o-transition-delay: 1s;
+        transition-delay: 1s;
+        -webkit-transform: scale(1.5);
         display: inline-block;
-        color: white; }
+        color: white;
+        margin: 0 5px; }
 
 #welcome_link_purchase a:hover {
   background-color: #313139;
@@ -5068,5 +5101,6 @@ header.container {
 
 @media screen and (min-width: 500px) {
   #welcome_link a {
-    min-width: 150px; }
+    min-width: 150px;
+    display: inline-block; }
  }

@@ -56,7 +56,8 @@ header.container {
 	margin: 20px 0;
 	i.fa {
 		display: none;
-		@include transition(all, 1.5s, ease);;
+		-webkit-transform: scale(-.5);
+		@include transition(-webkit-transform, 2s, ease-in-out, 1s);;
 	}
 	a {
 		color: black;
@@ -67,11 +68,14 @@ header.container {
 		max-width: 210px;
 		&:hover {
 			text-decoration: none;
-			@include transition(all, 1.5s, ease);;
+			@include transition(all, 1.5s, ease, 0);;
 			color: white;
 			i.fa {
+				@include transition(-webkit-transform, 2s, ease-in-out, 1s);;
+				-webkit-transform: scale(1.5);
 				display: inline-block;
 				color: white;
+				margin: 0 5px;
 			}
 		}
 	}
@@ -91,5 +95,6 @@ header.container {
 @media screen and (min-width: 500px) {
 	#welcome_link a {
 		min-width: 150px;
+		display: inline-block;
 	}
 }
