@@ -252,6 +252,105 @@ p.portfolio_widget_title_animation {
 	color: white;
 	@include centered;;
 }
+//ANIMATED COLUMNS 
+#service_fourth_widget {
+	padding: 0;
+	min-height: 350px;
+	height: 100%;
+	width: 100%;
+}
+.row .animation {
+	background: #EEE url("../imgs/grid.png") center bottom;
+	min-height: 350px;
+	margin: 4%;
+}
+.service_widget_animations {
+	background-color: #5a6b7f;
+	margin-left: 4%;
+	position: absolute;
+	width: 20%;
+	bottom: 5%;
+	visibility: hidden;
+	animation-name: animate;
+	-webkit-animation-name: animate;
+
+	animation-duration: 1.1s;	
+	-webkit-animation-duration: 1.1s;
+
+	animation-timing-function: ease-out;	
+	-webkit-animation-timing-function: ease-out;	
+
+	transform-origin: 50% 100%;
+	-ms-transform-origin: 50% 100%;
+	-webkit-transform-origin: 50% 100%; 
+}
+#service_animation_one {
+		margin-left: 0;
+		height: 25%;
+	}		
+#service_animation_two {
+	left: 24%;
+	height: 85%;
+	background-color: #de5f4c;
+	}
+	#service_animation_three {
+		left: 48%;
+		height: 45%;
+	}
+	#service_animation_four {
+		left: 72%;
+		height: 15%;
+		margin-right: 0;
+	}
+
+@keyframes animate {
+	0% {
+		transform: scaleY(0.1);
+	}
+	40% {
+		transform: scaleY(1.02);
+	}
+	60% {
+		transform: scaleY(0.98);
+	}
+	80% {
+		transform: scaleY(1.01);
+	}
+	100% {
+		transform: scaleY(0.98);
+	}				
+	80% {
+		transform: scaleY(1.01);
+	}
+	100% {
+		transform: scaleY(1);
+	}							
+}
+
+@-webkit-keyframes animate {
+	0% {
+		-webkit-transform: scaleY(0.1);
+	}
+	40% {
+		-webkit-transform: scaleY(1.02);
+	}
+	60% {
+		-webkit-transform: scaleY(0.98);
+	}
+	80% {
+		-webkit-transform: scaleY(1.01);
+	}
+	100% {
+		-webkit-transform: scaleY(0.98);
+	}				
+	80% {
+		-webkit-transform: scaleY(1.01);
+	}
+	100% {
+		-webkit-transform: scaleY(1);
+	}		
+}
+
 
 //BLOGS
 #blog_entry_row {
