@@ -81,14 +81,14 @@
         <div id="welcome_link">
             <div id="welcome_link_purchase">
                 <a href="#">
-                    <i class="fa fa-external-link" id="external_link"></i>
+                    <i class="fa fa-external-link fadeIn" id="external_link"></i>
                     <span id="welcome_link_purchase_text">Buy theONE</span>
                 </a>
             </div>
             <div id="welcome_link_twitter">
                 <a href="#twitter">
                     <span>Our Twitter </span>
-                    <i class="fa fa-twitter-square"></i>
+                    <i class="fa fa-twitter-square fadein"></i>
                 </a>        
             </div>
         </div>
@@ -581,7 +581,7 @@
         var imagePos = $(this).offset().top;
 
         var topOfWindow = $(window).scrollTop();
-            if (imagePos < topOfWindow+300) {
+            if (imagePos < topOfWindow+400) {
                 $('.service_widget_animations').addClass("pullUp");
             }
         });
