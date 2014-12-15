@@ -335,6 +335,9 @@ p.portfolio_widget_title_animation {
 
 .team_member_widget_wrap {
 	position: relative;
+	.team_member_widget_text {
+		@include transition(-webkit-transform, 2s, ease, 2s);;
+	}
 	&:hover {
 		.team_member_widget {
 			color: #fff;
@@ -346,7 +349,7 @@ p.portfolio_widget_title_animation {
 			color: #fff;
 			opacity: 1;
 			@include transition(color, 5s, ease-in, 4s);;
-			@include transition(-webkit-transform, 2s, ease, 4s);;
+			@include transition(-webkit-transform, 2s, ease, 2s);;
 			@include transition(opacity, .5s, ease, .5s);;
 		}
 	}
@@ -384,10 +387,107 @@ p.portfolio_widget_title_animation {
 		
 	}
 	.team_member_position {
+			display: none;
 			@include rem(20);;
 			letter-spacing: 0.15em;
 			text-transform: uppercase;
 		}
 	}
 
+}
+//CONTACT US FORM //
+#contact {
+	margin: 20px;
+	h1{
+		text-transform: uppercase;
+		padding-bottom: 20px;
+	}
+	#contact_us_form {
+		margin: 0;
+		background-color: $primary_background;
+		z-index: 1000;
+		padding: 65px 20px;
+		margin: 45px 0;
+	}
+	input[type="text"], textarea {
+		margin: 10px 0;
+		border: none;
+		border-bottom: 1px white solid;
+		width: 100%;
+		color: #fff;
+		font-weight: bolder;
+		background-color: $primary_background;
+	}
+	textarea {
+		margin-top: 0px;
+		padding-bottom: 60px;
+	}
+	input[type="text"]:focus, textarea:focus {
+		border: none;
+		border-bottom: 1px $accent_green solid;
+		outline-offset: 0;
+		outline-color: transparent;
+		outline-style: none;
+		outline-width: none;
+		placeholder {
+			display: none;
+		}
+	}
+	input[type="submit"] {
+		width: 100%;
+		background-color: $primary_background;
+		border: 1px solid white;
+		@include rem(18px);
+		text-align: center;
+		margin-top: 45px;
+		color: #fff;
+		padding: 10px 0;
+		letter-spacing: 0.15em;
+		@include transition(background-color, 1s, ease, 0);;
+		@include transition(border-color, .2s, ease, 0);;
+	}
+	input[type="submit"]:hover {
+		background-color: $secondary_color;
+		border-color: $secondary_color;
+		color: white;
+		@include transition(background-color, 1s, ease, 0);;
+	}
+
+}
+
+//FOOTER //
+#footer {
+	background-color: $primary_background;
+	text-align: center;
+	color: white;
+	letter-spacing: 0.15em;
+	h1 {
+		padding-bottom: 45px;
+	}
+	svg {
+		width: 100%;
+		fill: #FFF;
+		-webkit-transform: rotate(180deg);
+	}
+	#footer_social_media_links a{
+		color: #888;
+		padding: 0 10px 20px 0;
+
+	}
+	p {
+		padding: 20px 0 10px;
+		i {
+			color: $secondary_color;
+		}
+		a:first-of-type {
+			color: $secondary_color;
+		}
+	}
+	#site_design {
+		padding-top: 10px;
+		color: #777;
+		a {
+			color: $primary_color_highlight;
+		}
+	}
 }

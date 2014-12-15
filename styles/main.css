@@ -5758,6 +5758,27 @@ p.portfolio_widget_title_animation {
 
 .team_member_widget_wrap {
   position: relative; }
+  .team_member_widget_wrap .team_member_widget_text {
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -webkit-transform;
+    -ms-transition-property: -webkit-transform;
+    -o-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -ms-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-delay: 2s;
+    -moz-transition-delay: 2s;
+    -ms-transition-delay: 2s;
+    -o-transition-delay: 2s;
+    transition-delay: 2s; }
   .team_member_widget_wrap:hover .team_member_widget {
     color: #fff;
     opacity: 1;
@@ -5820,11 +5841,11 @@ p.portfolio_widget_title_animation {
     -ms-transition-timing-function: ease;
     -o-transition-timing-function: ease;
     transition-timing-function: ease;
-    -webkit-transition-delay: 4s;
-    -moz-transition-delay: 4s;
-    -ms-transition-delay: 4s;
-    -o-transition-delay: 4s;
-    transition-delay: 4s;
+    -webkit-transition-delay: 2s;
+    -moz-transition-delay: 2s;
+    -ms-transition-delay: 2s;
+    -o-transition-delay: 2s;
+    transition-delay: 2s;
     -webkit-transition-property: opacity;
     -moz-transition-property: opacity;
     -ms-transition-property: opacity;
@@ -5957,6 +5978,139 @@ p.portfolio_widget_title_animation {
       letter-spacing: 0.15em;
       font-size: 1.875rem; }
     .team_member_widget h1.team_member_widget_text .team_member_position {
+      display: none;
       font-size: 1.25rem;
       letter-spacing: 0.15em;
       text-transform: uppercase; }
+
+#contact {
+  margin: 20px; }
+  #contact h1 {
+    text-transform: uppercase;
+    padding-bottom: 20px; }
+  #contact #contact_us_form {
+    margin: 0;
+    background-color: #2C2F36;
+    z-index: 1000;
+    padding: 65px 20px;
+    margin: 45px 0; }
+  #contact input[type="text"], #contact textarea {
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px white solid;
+    width: 100%;
+    color: #fff;
+    font-weight: bolder;
+    background-color: #2C2F36; }
+  #contact textarea {
+    margin-top: 0px;
+    padding-bottom: 60px; }
+  #contact input[type="text"]:focus, #contact textarea:focus {
+    border: none;
+    border-bottom: 1px #00A65C solid;
+    outline-offset: 0;
+    outline-color: transparent;
+    outline-style: none;
+    outline-width: none; }
+    #contact input[type="text"]:focus placeholder, #contact textarea:focus placeholder {
+      display: none; }
+  #contact input[type="submit"] {
+    width: 100%;
+    background-color: #2C2F36;
+    border: 1px solid white;
+    font-size: 1.125pxrem;
+    text-align: center;
+    margin-top: 45px;
+    color: #fff;
+    padding: 10px 0;
+    letter-spacing: 0.15em;
+    -webkit-transition-property: background-color;
+    -moz-transition-property: background-color;
+    -ms-transition-property: background-color;
+    -o-transition-property: background-color;
+    transition-property: background-color;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    -ms-transition-delay: 0;
+    -o-transition-delay: 0;
+    transition-delay: 0;
+    -webkit-transition-property: border-color;
+    -moz-transition-property: border-color;
+    -ms-transition-property: border-color;
+    -o-transition-property: border-color;
+    transition-property: border-color;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -ms-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    -ms-transition-delay: 0;
+    -o-transition-delay: 0;
+    transition-delay: 0; }
+  #contact input[type="submit"]:hover {
+    background-color: #FA6746;
+    border-color: #FA6746;
+    color: white;
+    -webkit-transition-property: background-color;
+    -moz-transition-property: background-color;
+    -ms-transition-property: background-color;
+    -o-transition-property: background-color;
+    transition-property: background-color;
+    -webkit-transition-duration: 1s;
+    -moz-transition-duration: 1s;
+    -ms-transition-duration: 1s;
+    -o-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: ease;
+    -moz-transition-timing-function: ease;
+    -ms-transition-timing-function: ease;
+    -o-transition-timing-function: ease;
+    transition-timing-function: ease;
+    -webkit-transition-delay: 0;
+    -moz-transition-delay: 0;
+    -ms-transition-delay: 0;
+    -o-transition-delay: 0;
+    transition-delay: 0; }
+
+#footer {
+  background-color: #2C2F36;
+  text-align: center;
+  color: white;
+  letter-spacing: 0.15em; }
+  #footer h1 {
+    padding-bottom: 45px; }
+  #footer svg {
+    width: 100%;
+    fill: #FFF;
+    -webkit-transform: rotate(180deg); }
+  #footer #footer_social_media_links a {
+    color: #888;
+    padding: 0 10px 20px 0; }
+  #footer p {
+    padding: 20px 0 10px; }
+    #footer p i {
+      color: #FA6746; }
+    #footer p a:first-of-type {
+      color: #FA6746; }
+  #footer #site_design {
+    padding-top: 10px;
+    color: #777; }
+    #footer #site_design a {
+      color: #19191e; }
