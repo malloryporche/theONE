@@ -6042,116 +6042,121 @@ p.portfolio_widget_title_animation {
       letter-spacing: 0.15em;
       font-size: 1.875rem; }
     .team_member_widget h1.team_member_widget_text .team_member_position {
-      display: none;
+      visibility: hidden;
       font-size: 1.25rem;
       letter-spacing: 0.15em;
       text-transform: uppercase; }
 
-#contact {
+@media screen and (min-width: 500px) {
+  .team_member_widget h1.team_member_widget_text .team_member_position {
+    visibility: visible;
+    color: #fff; }
+ }
+
+#contact h1 {
+  text-transform: uppercase;
+  padding-bottom: 20px; }
+#contact form.contact_form {
   margin: 20px; }
-  #contact h1 {
-    text-transform: uppercase;
-    padding-bottom: 20px; }
-  #contact #contact_us_form {
-    margin: 0;
-    background-color: #2C2F36;
-    z-index: 1000;
-    padding: 65px 20px;
-    margin: 45px 0; }
-  #contact input[type="text"], #contact textarea {
-    margin: 10px 0;
-    border: none;
-    border-bottom: 1px white solid;
-    width: 100%;
-    color: #fff;
-    font-weight: bolder;
-    background-color: #2C2F36; }
-  #contact textarea {
-    margin-top: 0px;
-    padding-bottom: 60px; }
-  #contact input[type="text"]:focus, #contact textarea:focus {
-    border: none;
-    border-bottom: 1px #00A65C solid;
-    outline-offset: 0;
-    outline-color: transparent;
-    outline-style: none;
-    outline-width: none; }
-    #contact input[type="text"]:focus placeholder, #contact textarea:focus placeholder {
-      display: none; }
-  #contact input[type="submit"] {
-    width: 100%;
-    background-color: #2C2F36;
-    border: 1px solid white;
-    font-size: 1.125pxrem;
-    text-align: center;
-    margin-top: 45px;
-    color: #fff;
-    padding: 10px 0;
-    letter-spacing: 0.15em;
-    -webkit-transition-property: background-color;
-    -moz-transition-property: background-color;
-    -ms-transition-property: background-color;
-    -o-transition-property: background-color;
-    transition-property: background-color;
-    -webkit-transition-duration: 1s;
-    -moz-transition-duration: 1s;
-    -ms-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    transition-duration: 1s;
-    -webkit-transition-timing-function: ease;
-    -moz-transition-timing-function: ease;
-    -ms-transition-timing-function: ease;
-    -o-transition-timing-function: ease;
-    transition-timing-function: ease;
-    -webkit-transition-delay: 0;
-    -moz-transition-delay: 0;
-    -ms-transition-delay: 0;
-    -o-transition-delay: 0;
-    transition-delay: 0;
-    -webkit-transition-property: border-color;
-    -moz-transition-property: border-color;
-    -ms-transition-property: border-color;
-    -o-transition-property: border-color;
-    transition-property: border-color;
-    -webkit-transition-duration: 0.2s;
-    -moz-transition-duration: 0.2s;
-    -ms-transition-duration: 0.2s;
-    -o-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-    -webkit-transition-timing-function: ease;
-    -moz-transition-timing-function: ease;
-    -ms-transition-timing-function: ease;
-    -o-transition-timing-function: ease;
-    transition-timing-function: ease;
-    -webkit-transition-delay: 0;
-    -moz-transition-delay: 0;
-    -ms-transition-delay: 0;
-    -o-transition-delay: 0;
-    transition-delay: 0; }
-  #contact input[type="submit"]:hover {
-    background-color: #FA6746;
-    border-color: #FA6746;
-    color: white;
-    -webkit-transition-property: background-color;
-    -moz-transition-property: background-color;
-    -ms-transition-property: background-color;
-    -o-transition-property: background-color;
-    transition-property: background-color;
-    -webkit-transition-duration: 1s;
-    -moz-transition-duration: 1s;
-    -ms-transition-duration: 1s;
-    -o-transition-duration: 1s;
-    transition-duration: 1s;
-    -webkit-transition-timing-function: ease;
-    -moz-transition-timing-function: ease;
-    -ms-transition-timing-function: ease;
-    -o-transition-timing-function: ease;
-    transition-timing-function: ease;
-    -webkit-transition-delay: 0;
-    -moz-transition-delay: 0;
-    -ms-transition-delay: 0;
-    -o-transition-delay: 0;
-    transition-delay: 0; }
+#contact #contact_us_form {
+  background-color: #2C2F36;
+  z-index: 1000;
+  padding: 65px 20px;
+  margin: 45px 0; }
+#contact input[type="text"], #contact textarea {
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px white solid;
+  width: 100%;
+  color: #fff;
+  font-weight: bolder;
+  background-color: #2C2F36; }
+#contact textarea {
+  margin-top: 0px;
+  padding-bottom: 60px; }
+#contact input[type="text"]:focus, #contact textarea:focus {
+  border: none;
+  border-bottom: 1px #00A65C solid;
+  outline-offset: 0;
+  outline-color: transparent;
+  outline-style: none;
+  outline-width: none; }
+  #contact input[type="text"]:focus placeholder, #contact textarea:focus placeholder {
+    display: none; }
+#contact input[type="submit"] {
+  width: 100%;
+  background-color: #2C2F36;
+  border: 1px solid white;
+  font-size: 1.125pxrem;
+  text-align: center;
+  margin-top: 45px;
+  color: #fff;
+  padding: 10px 0;
+  letter-spacing: 0.15em;
+  -webkit-transition-property: background-color;
+  -moz-transition-property: background-color;
+  -ms-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -ms-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -ms-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0;
+  -webkit-transition-property: border-color;
+  -moz-transition-property: border-color;
+  -ms-transition-property: border-color;
+  -o-transition-property: border-color;
+  transition-property: border-color;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -ms-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -ms-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0; }
+#contact input[type="submit"]:hover {
+  background-color: #FA6746;
+  border-color: #FA6746;
+  color: white;
+  -webkit-transition-property: background-color;
+  -moz-transition-property: background-color;
+  -ms-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: ease;
+  -moz-transition-timing-function: ease;
+  -ms-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-delay: 0;
+  -moz-transition-delay: 0;
+  -ms-transition-delay: 0;
+  -o-transition-delay: 0;
+  transition-delay: 0; }
 
 #footer {
   background-color: #2C2F36;

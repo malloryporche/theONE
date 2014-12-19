@@ -481,7 +481,7 @@ p.portfolio_widget_title_animation {
 		
 	}
 	.team_member_position {
-			display: none;
+			visibility: hidden;
 			@include rem(20);;
 			letter-spacing: 0.15em;
 			text-transform: uppercase;
@@ -489,15 +489,22 @@ p.portfolio_widget_title_animation {
 	}
 
 }
+@media screen and (min-width: 500px) {
+	.team_member_widget h1.team_member_widget_text .team_member_position {
+		visibility: visible;
+		color: #fff;
+	}
+}
 //CONTACT US FORM //
 #contact {
-	margin: 20px;
 	h1{
 		text-transform: uppercase;
 		padding-bottom: 20px;
 	}
+	form.contact_form {
+		margin: 20px;
+	}
 	#contact_us_form {
-		margin: 0;
 		background-color: $primary_background;
 		z-index: 1000;
 		padding: 65px 20px;
