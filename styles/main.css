@@ -5098,7 +5098,6 @@ header.container {
       transition-delay: 0;
       color: white; }
     #welcome_link a span {
-      margin-right: 20px;
       -webkit-transition-property: -webkit-transform;
       -moz-transition-property: -webkit-transform;
       -ms-transition-property: -webkit-transform;

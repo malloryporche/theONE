@@ -86,7 +86,6 @@ header.container {
 			color: white;
 		}
 		span {
-			margin-right: 20px;
 			@include transition(-webkit-transform, 1.5s, ease, 0);;
 		}
 	}
