@@ -71,10 +71,7 @@ header.container {
 	i.fa {
 		display: none;
 		color: white;
-		-webkit-transform: scale(.5, .5);
-		-moz-transform: scale(.5,.5);
-		-o-transform: scale(.5,.5);
-		transform: scale(.5,.5);
+		
 	}
 	a {
 		@include rem(19);
@@ -90,16 +87,12 @@ header.container {
 		}
 		span {
 			margin-right: 20px;
-			@include transition(-webkit-transform, 2s, ease, 0);;
+			@include transition(-webkit-transform, 1.5s, ease, 0);;
 		}
 	}
 }
 #welcome a:hover i.fa {
 	display: inline-block;
-	-webkit-transform: scale(2,2);
-	-moz-transform: scale(2,2);
-	-o-transform: scale(2,2);
-	transform: scale(2, 2);
 	@include transition(-webkit-transform, 1.5s, ease-in-out, 0);;
 	}
 #welcome_link_purchase a {
@@ -107,8 +100,7 @@ header.container {
 		background-color: $primary_color;
 		border-color: $primary_color;
 		#welcome_link_purchase_text {
-			-webkit-transform: transalteX(55px);
-			@include transition(-webkit-transform, 2s, ease, 0);
+			-webkit-transform: translateX(5px);
 		}
 	}
 }
@@ -118,7 +110,7 @@ header.container {
 		border-color: $secondary_color;
 		span {
 			-webkit-transform: translateX(-5px);
-			@include transition(-webkit-transform, 2s, ease, 0);
+			@include transition(-webkit-transform, 1.5s, ease, 0);
 		}
 	}
 }

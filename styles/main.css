@@ -5066,11 +5066,7 @@ header.container {
   margin: 20px 0; }
   #welcome_link i.fa {
     display: none;
-    color: white;
-    -webkit-transform: scale(0.5, 0.5);
-    -moz-transform: scale(0.5, 0.5);
-    -o-transform: scale(0.5, 0.5);
-    transform: scale(0.5, 0.5); }
+    color: white; }
   #welcome_link a {
     font-size: 1.1875rem;
     letter-spacing: 0.15em;
@@ -5108,11 +5104,11 @@ header.container {
       -ms-transition-property: -webkit-transform;
       -o-transition-property: -webkit-transform;
       transition-property: -webkit-transform;
-      -webkit-transition-duration: 2s;
-      -moz-transition-duration: 2s;
-      -ms-transition-duration: 2s;
-      -o-transition-duration: 2s;
-      transition-duration: 2s;
+      -webkit-transition-duration: 1.5s;
+      -moz-transition-duration: 1.5s;
+      -ms-transition-duration: 1.5s;
+      -o-transition-duration: 1.5s;
+      transition-duration: 1.5s;
       -webkit-transition-timing-function: ease;
       -moz-transition-timing-function: ease;
       -ms-transition-timing-function: ease;
@@ -5126,10 +5122,6 @@ header.container {
 
 #welcome a:hover i.fa {
   display: inline-block;
-  -webkit-transform: scale(2, 2);
-  -moz-transform: scale(2, 2);
-  -o-transform: scale(2, 2);
-  transform: scale(2, 2);
   -webkit-transition-property: -webkit-transform;
   -moz-transition-property: -webkit-transform;
   -ms-transition-property: -webkit-transform;
@@ -5155,27 +5147,7 @@ header.container {
   background-color: #313139;
   border-color: #313139; }
   #welcome_link_purchase a:hover #welcome_link_purchase_text {
-    -webkit-transform: transalteX(55px);
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -webkit-transform;
-    -ms-transition-property: -webkit-transform;
-    -o-transition-property: -webkit-transform;
-    transition-property: -webkit-transform;
-    -webkit-transition-duration: 2s;
-    -moz-transition-duration: 2s;
-    -ms-transition-duration: 2s;
-    -o-transition-duration: 2s;
-    transition-duration: 2s;
-    -webkit-transition-timing-function: ease;
-    -moz-transition-timing-function: ease;
-    -ms-transition-timing-function: ease;
-    -o-transition-timing-function: ease;
-    transition-timing-function: ease;
-    -webkit-transition-delay: 0;
-    -moz-transition-delay: 0;
-    -ms-transition-delay: 0;
-    -o-transition-delay: 0;
-    transition-delay: 0; }
+    -webkit-transform: translateX(5px); }
 
 #welcome_link_twitter a:hover {
   background-color: #FA6746;
@@ -5187,11 +5159,11 @@ header.container {
     -ms-transition-property: -webkit-transform;
     -o-transition-property: -webkit-transform;
     transition-property: -webkit-transform;
-    -webkit-transition-duration: 2s;
-    -moz-transition-duration: 2s;
-    -ms-transition-duration: 2s;
-    -o-transition-duration: 2s;
-    transition-duration: 2s;
+    -webkit-transition-duration: 1.5s;
+    -moz-transition-duration: 1.5s;
+    -ms-transition-duration: 1.5s;
+    -o-transition-duration: 1.5s;
+    transition-duration: 1.5s;
     -webkit-transition-timing-function: ease;
     -moz-transition-timing-function: ease;
     -ms-transition-timing-function: ease;
