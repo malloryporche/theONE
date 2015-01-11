@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>theone</title>
-    <meta name="description" content="">
+    <title>theOne</title>
+    <meta name="description" content="Creative portfolio site">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
@@ -20,18 +20,21 @@
     <link rel="stylesheet" href="styles/main.css">
     <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,400,300,500' rel='stylesheet' type='text/css'>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
     <!-- endbuild -->
     
     <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="bower_components/modernizr/modernizr.js"></script>
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script async src="bower_components/modernizr/modernizr.js"></script>
+    <script async src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <!-- endbuild -->
 </head>
 <body>
+<div class="loader"></div>
     <!--[if lt IE 8]>
     <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+
+
     <!--Site Navigation-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="mobile-nav">
         <div class="container">
@@ -546,15 +549,16 @@
             <a href="http://www.behance.com">Behance</a>
             <a href="http://www.flickr.com">Flickr</a>
           </div>
-        <p><br> Hand coded wtih <i class="fa fa-heart"></i> by <a href="http://www.msmalloryporche.com">Mallory Porch&eacute</a> <br> <span id="site_design">Site design by <a href="www.ximudesign.com">XIMU Design</a><br><br>Copyright &copy 2014</p></span>
+        <p>
+            <br> Hand coded wtih <i class="fa fa-heart"></i> by <a href="http://www.msmalloryporche.com">Mallory Porch&eacute</a> <br> <span id="site_design">Site design by <a href="www.ximudesign.com">XIMU Design</a><br><br>Copyright &copy 2014 </p> </span>
         </div>
     </section>
+
     </main>
-      
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script async src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/affix.js"></script>
     <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap/alert.js"></script>
@@ -574,6 +578,39 @@
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
+    <script>
+    var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = 'small.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+    </script>
+    
+    <script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = 'small.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);
+      </script>
+     <script>
+      var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = 'styles/main.css';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+      };
+      var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+          webkitRequestAnimationFrame || msRequestAnimationFrame;
+      if (raf) raf(cb);
+      else window.addEventListener('load', cb);</script>
     <!-- Animate on scroll -->
     <script>
     $(window).scroll(function() {
