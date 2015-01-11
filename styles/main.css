@@ -5050,7 +5050,8 @@ header.container {
 #welcome_header {
   line-height: 150%;
   margin-bottom: 40px;
-  font-weight: light; }
+  font-weight: light;
+  padding: 0 110px; }
 
 #welcome p {
   color: #999;
